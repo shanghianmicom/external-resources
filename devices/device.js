@@ -9,7 +9,6 @@ module.exports = [
     'arduinoEsp32',
     'arduinoEsp8266',
     'microbit',
-    'microbitV2',
-    'makeyMakey',
+    'microbitV2'
     // Third party
 ];
