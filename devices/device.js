@@ -1,5 +1,6 @@
 module.exports = [
     // Buid-in device
+    'arduinoTj2560',
     'arduinoUno',
     'arduinoNano',
     'arduinoMini',
