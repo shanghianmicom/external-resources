@@ -8,7 +8,6 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_COLOR: 'RGB LED strip color R %1 G %2 B %3',
         ARDUINOTJ2560EXT_SETBRIGHTNESS: 'set on board led brightness %1',
         ARDUINOTJ2560EXT_CLEAR: 'clear all on board led',
-        ARDUINOTJ2560EXT_SHOW: 'refresh on board led',
 
         ARDUINOTJ2560EXT_PLAYTONEFORBEAT: 'on board buzzer play tone %1 for %2 beat',
         ARDUINOTJ2560EXT_SETTEMPO: 'set on board buzzer tempo to (bpm) %1',
@@ -53,7 +52,6 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_COLOR: 'RGB LED灯条颜色 R %1 G %2 B %3',
         ARDUINOTJ2560EXT_SETBRIGHTNESS: '设置板载全彩LED亮度 %1',
         ARDUINOTJ2560EXT_CLEAR: '清除所有板载全彩LED',
-        ARDUINOTJ2560EXT_SHOW: '刷新板载全彩LED',
 
         ARDUINOTJ2560EXT_PLAYTONEFORBEAT: '板载蜂鸣器播放音调 %1 持续 %2 节拍',
         ARDUINOTJ2560EXT_SETTEMPO: '设置板载蜂鸣器节奏为 (bpm) %1',

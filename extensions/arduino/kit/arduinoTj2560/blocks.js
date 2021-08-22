@@ -2,20 +2,10 @@
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
 function addBlocks (Blockly) {
-    const colour = '#7700FF';
-    const secondaryColour = '#4400B3';
+    const colour = '#4C97FF';
+    const secondaryColour = '#3373CC';
 
     /* ---------------- 板载 rgb led ------------------ */
-    Blockly.Blocks.arduinoTj2560Ext_setOnBoardRgbLed = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_SETONBOARDRGBLED,
-                colour: colour,
-                extensions: ['shape_statement']
-            });
-        }
-    };
-
     Blockly.Blocks.arduinoTj2560Ext_setPixelColor = {
         init: function () {
             this.jsonInit({
@@ -108,17 +98,6 @@ function addBlocks (Blockly) {
         init: function () {
             this.jsonInit({
                 message0: Blockly.Msg.ARDUINOTJ2560EXT_CLEAR,
-                colour: colour,
-                secondaryColour: secondaryColour,
-                extensions: ['shape_statement']
-            });
-        }
-    };
-
-    Blockly.Blocks.arduinoTj2560Ext_show = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_SHOW,
                 colour: colour,
                 secondaryColour: secondaryColour,
                 extensions: ['shape_statement']

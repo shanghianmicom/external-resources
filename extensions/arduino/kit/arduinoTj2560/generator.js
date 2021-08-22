@@ -10,7 +10,7 @@ function addGenerator (Blockly) {
         Blockly.Arduino.definitions_.arduinoTj2560Ext_pixelInit = `Adafruit_NeoPixel onBoardLedStrip(19, A7, NEO_GRB + NEO_KHZ800);`;
         Blockly.Arduino.setups_.arduinoTj2560Ext_pixelInit = `onBoardLedStrip.begin();`;
 
-        return `onBoardLedStrip.setPixelColor(${no} - 1, ${colour});\n`;
+        return `onBoardLedStrip.setPixelColor(${no} - 1, ${colour});\nonBoardLedStrip.show();\n`;
     };
 
     Blockly.Arduino.arduinoTj2560Ext_fill = function (block) {
@@ -22,7 +22,7 @@ function addGenerator (Blockly) {
         Blockly.Arduino.definitions_.arduinoTj2560Ext_pixelInit = `Adafruit_NeoPixel onBoardLedStrip(19, A7, NEO_GRB + NEO_KHZ800);`;
         Blockly.Arduino.setups_.arduinoTj2560Ext_pixelInit = `onBoardLedStrip.begin();`;
 
-        return `onBoardLedStrip.fill(${colour}, ${first} - 1, ${count});\n`;
+        return `onBoardLedStrip.fill(${colour}, ${first} - 1, ${count});\nonBoardLedStrip.show();\n`;
     };
 
     Blockly.Arduino.arduinoTj2560Ext_color = function (block) {
@@ -44,7 +44,7 @@ function addGenerator (Blockly) {
         Blockly.Arduino.definitions_.arduinoTj2560Ext_pixelInit = `Adafruit_NeoPixel onBoardLedStrip(19, A7, NEO_GRB + NEO_KHZ800);`;
         Blockly.Arduino.setups_.arduinoTj2560Ext_pixelInit = `onBoardLedStrip.begin();`;
 
-        return `onBoardLedStrip.setBrightness(${brightness});\n`;
+        return `onBoardLedStrip.setBrightness(${brightness});\nonBoardLedStrip.show();\n`;
     };
 
     Blockly.Arduino.arduinoTj2560Ext_clear = function () {
@@ -52,15 +52,7 @@ function addGenerator (Blockly) {
         Blockly.Arduino.definitions_.arduinoTj2560Ext_pixelInit = `Adafruit_NeoPixel onBoardLedStrip(19, A7, NEO_GRB + NEO_KHZ800);`;
         Blockly.Arduino.setups_.arduinoTj2560Ext_pixelInit = `onBoardLedStrip.begin();`;
 
-        return `onBoardLedStrip.clear();\n`;
-    };
-
-    Blockly.Arduino.arduinoTj2560Ext_show = function () {
-        Blockly.Arduino.includes_.arduinoTj2560Ext_pixelInit = `#include <Adafruit_NeoPixel.h>`;
-        Blockly.Arduino.definitions_.arduinoTj2560Ext_pixelInit = `Adafruit_NeoPixel onBoardLedStrip(19, A7, NEO_GRB + NEO_KHZ800);`;
-        Blockly.Arduino.setups_.arduinoTj2560Ext_pixelInit = `onBoardLedStrip.begin();`;
-
-        return `onBoardLedStrip.show();\n`;
+        return `onBoardLedStrip.clear();\nonBoardLedStrip.show();\n`;
     };
 
     Blockly.Arduino.arduinoTj2560Ext_playToneForBeat = function () {

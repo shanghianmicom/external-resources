@@ -2,8 +2,8 @@
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
 function addBlocks (Blockly) {
-    const colour = '#7700FF';
-    const secondaryColour = '#4400B3';
+    const colour = '#4CBFE6';
+    const secondaryColour = '#2E8EB8';
 
     Blockly.Blocks.tj2560FlameIntensity_read = {
         init: function () {
