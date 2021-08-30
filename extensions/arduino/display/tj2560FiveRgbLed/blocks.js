@@ -2,8 +2,8 @@
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
 function addBlocks (Blockly) {
-    const colour = '#2ce89f';
-    const secondaryColour = '#2ce89f';
+    const colour = '#06603e';
+    const secondaryColour = '#06603e';
 
     Blockly.Blocks.tj2560FiveRgbLed_setPixelColor = {
         init: function () {
