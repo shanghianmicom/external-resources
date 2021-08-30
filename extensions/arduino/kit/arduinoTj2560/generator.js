@@ -55,6 +55,15 @@ function addGenerator (Blockly) {
         return `onBoardLedStrip.clear();\nonBoardLedStrip.show();\n`;
     };
 
+    Blockly.Arduino.arduinoTj2560Ext_hc595Show = function () {
+        const data = this.getFieldValue('DATA');
+
+        Blockly.Arduino.includes_.arduinoTj2560Ext_ch595init = `#include <ShiftRegister74HC595.h>`;
+        Blockly.Arduino.definitions_.arduinoTj2560Ext_pixelInit = `ShiftRegister74HC595<1> hc595(22, 24, 23);`;
+
+        return `uint8_t hc595Values[] = {${data}};\nhc595.setAll(hc595Values);\n`;
+    };
+
     Blockly.Arduino.arduinoTj2560Ext_playSound = function (block) {
         const freq = Blockly.Arduino.valueToCode(block, 'FREQ', Blockly.Arduino.ORDER_ATOMIC);
         const time = Blockly.Arduino.valueToCode(block, 'TIME', Blockly.Arduino.ORDER_ATOMIC);

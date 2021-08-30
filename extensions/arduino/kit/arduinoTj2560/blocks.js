@@ -105,6 +105,36 @@ function addBlocks (Blockly) {
         }
     };
 
+    Blockly.Blocks.arduinoTj2560Ext_hc595Show = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_HC595SHOW,
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'DATA',
+                        options: [
+                            ['0', 'B11000000'],
+                            ['1', 'B11111001'],
+                            ['2', 'B10100100'],
+                            ['3', 'B10110000'],
+                            ['4', 'B10011001'],
+                            ['5', 'B10010010'],
+                            ['6', 'B10000010'],
+                            ['7', 'B11111000'],
+                            ['8', 'B10000000'],
+                            ['9', 'B10010000'],
+                            [Blockly.Msg.ARDUINOTJ2560EXT_HC595SHOWNULL, 'B11111111']
+                        ]
+                    }
+                ],
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
     /* ---------------- 板载蜂鸣器 ------------------ */
     const note = [
         ['C3', 'note_C3'],

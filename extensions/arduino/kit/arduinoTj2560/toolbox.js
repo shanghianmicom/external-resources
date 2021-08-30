@@ -58,6 +58,8 @@ function addToolbox () {
     </block>
     <block type="arduinoTj2560Ext_clear" id="arduinoTj2560Ext_clear">
     </block>
+    <block type="arduinoTj2560Ext_hc595Show" id="arduinoTj2560Ext_hc595Show">
+    </block>
     <sep gap="36"/>
     <block type="arduinoTj2560Ext_playSound" id="arduinoTj2560Ext_playSound">
         <value name="FREQ">
