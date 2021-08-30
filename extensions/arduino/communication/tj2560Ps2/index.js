@@ -19,7 +19,7 @@ const tj2560Ps2 = formatMessage => ({
     msg: 'msg.js',
     library: 'lib',
     tags: ['communication'],
-    helpLink: 'null'
+    helpLink: null
 });
 
 module.exports = tj2560Ps2;

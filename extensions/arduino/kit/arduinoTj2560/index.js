@@ -1,14 +1,9 @@
-const arduinoTj2560Ext = formatMessage => ({
+const arduinoTj2560Ext = () => ({
     name: 'TJ2560',
     extensionId: 'arduinoTj2560Ext',
     version: '1.0.0',
     supportDevice: ['arduinoTj2560'],
     author: 'ArthurZheng',
-    description: formatMessage({
-        id: 'arduinoTj2560Ext.description',
-        default: 'Tj arduino 2560 board.'
-    }),
-    featured: true,
     hide: true,
     blocks: 'blocks.js',
     generator: 'generator.js',

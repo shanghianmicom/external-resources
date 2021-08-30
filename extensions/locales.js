@@ -97,7 +97,9 @@ module.exports = {
         'tj2560TiltSensor.name': 'Tilt Sensor',
         'tj2560TiltSensor.description': 'Tilt sensor module.',
         'tj2560WaterLevel.name': 'Water Level',
-        'tj2560WaterLevel.description': 'Water level module.'
+        'tj2560WaterLevel.description': 'Water level module.',
+        'tj2560MotorDriver.name': 'Motor Driver',
+        'tj2560MotorDriver.description': 'Connected to the p6 interface, allowing you to drive 4 additional motors.'
     },
     'zh-cn': {
         'chineseTTS.name': '中文 TTS',
@@ -195,6 +197,8 @@ module.exports = {
         'tj2560TiltSensor.name': '倾斜传感器',
         'tj2560TiltSensor.description': '倾斜传感器模块。',
         'tj2560WaterLevel.name': '水位传感器',
-        'tj2560WaterLevel.description': '水位传感器模块。'
+        'tj2560WaterLevel.description': '水位传感器模块。',
+        'tj2560MotorDriver.name': '电机驱动模块',
+        'tj2560MotorDriver.description': '连接在P6接口上，能够驱动额外的4个电机。'
     }
 };
