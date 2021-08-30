@@ -55,6 +55,17 @@ function addGenerator (Blockly) {
         return `onBoardLedStrip.clear();\nonBoardLedStrip.show();\n`;
     };
 
+    Blockly.Arduino.arduinoTj2560Ext_playSound = function (block) {
+        const freq = Blockly.Arduino.valueToCode(block, 'FREQ', Blockly.Arduino.ORDER_ATOMIC);
+        const time = Blockly.Arduino.valueToCode(block, 'TIME', Blockly.Arduino.ORDER_ATOMIC);
+
+        Blockly.Arduino.includes_.arduinoTj2560Ext_buzzerInit = `#include <Buzzer.h>`;
+        Blockly.Arduino.definitions_.arduinoTj2560Ext_buzzerInit = `Buzzer onBoardBuzzer(38);\n` +
+            `float beatTime = 60.0 / 120;`;
+
+        return `onBoardBuzzer.tone(${freq}, ${time} * 1000);\n`;
+    };
+
     Blockly.Arduino.arduinoTj2560Ext_playToneForBeat = function () {
         const freq = this.getFieldValue('FREQ');
         const time = this.getFieldValue('TIME');

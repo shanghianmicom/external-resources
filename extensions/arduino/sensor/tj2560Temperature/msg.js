@@ -2,12 +2,12 @@
 /* eslint-disable require-jsdoc */
 function addMsg (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales.en, {
-        TJ2560RGBLED_CATEGORY: 'Single Rgb Led',
-        TJ2560RGBLED_SETPIXELCOLOR: 'set %1 rgb led color %2'
+        TJ2560TEMPERATURE_CATEGORY: 'Temperature Sensor',
+        TJ2560TEMPERATURE_READ: 'temperature sensor read temperature'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
-        TJ2560RGBLED_CATEGORY: '全彩灯',
-        TJ2560RGBLED_SETPIXELCOLOR: '设置 %1 全彩灯颜色 %2'
+        TJ2560TEMPERATURE_CATEGORY: '温度传感器',
+        TJ2560TEMPERATURE_READ: '温度传感器 %1 读取温度'
     });
     return Blockly;
 }

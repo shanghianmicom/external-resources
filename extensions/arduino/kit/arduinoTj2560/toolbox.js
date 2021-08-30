@@ -59,6 +59,18 @@ function addToolbox () {
     <block type="arduinoTj2560Ext_clear" id="arduinoTj2560Ext_clear">
     </block>
     <sep gap="36"/>
+    <block type="arduinoTj2560Ext_playSound" id="arduinoTj2560Ext_playSound">
+        <value name="FREQ">
+            <shadow type="math_whole_number">
+                <field name="NUM">262</field>
+            </shadow>
+        </value>
+        <value name="TIME">
+            <shadow type="math_positive_number">
+                <field name="NUM">1</field>
+            </shadow>
+        </value>
+    </block>
     <block type="arduinoTj2560Ext_playToneForBeat" id="arduinoTj2560Ext_playToneForBeat">
         <field name="FREQ">note_C4</field>
     </block>

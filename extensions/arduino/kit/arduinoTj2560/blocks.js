@@ -155,10 +155,20 @@ function addBlocks (Blockly) {
         ['4', '4']
     ];
 
-    Blockly.Blocks.arduinoTj2560Ext_init = {
+    Blockly.Blocks.arduinoTj2560Ext_playSound = {
         init: function () {
             this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_INIT,
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_PLAYSOUND,
+                args0: [
+                    {
+                        type: 'input_value',
+                        name: 'FREQ'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'TIME'
+                    }
+                ],
                 colour: colour,
                 secondaryColour: secondaryColour,
                 extensions: ['shape_statement']

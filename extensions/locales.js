@@ -99,7 +99,11 @@ module.exports = {
         'tj2560WaterLevel.name': 'Water Level',
         'tj2560WaterLevel.description': 'Water level module.',
         'tj2560MotorDriver.name': 'Motor Driver',
-        'tj2560MotorDriver.description': 'Connected to the p6 interface, allowing you to drive 4 additional motors.'
+        'tj2560MotorDriver.description': 'Connected to the p6 interface, allowing you to drive 4 additional motors.',
+        'tj2560LaserRanging.name': 'Laser Ranging',
+        'tj2560LaserRanging.description': 'Laser ranging module.',
+        'tj2560Temperature.name': 'Temperature Sensor',
+        'tj2560Temperature.description': 'Temperature sensor module.'
     },
     'zh-cn': {
         'chineseTTS.name': '中文 TTS',
@@ -199,6 +203,10 @@ module.exports = {
         'tj2560WaterLevel.name': '水位传感器',
         'tj2560WaterLevel.description': '水位传感器模块。',
         'tj2560MotorDriver.name': '电机驱动模块',
-        'tj2560MotorDriver.description': '连接在P6接口上，能够驱动额外的4个电机。'
+        'tj2560MotorDriver.description': '连接在P6接口上，能够驱动额外的4个电机。',
+        'tj2560LaserRanging.name': '激光测距',
+        'tj2560LaserRanging.description': '激光测距模块。',
+        'tj2560Temperature.name': '温度传感器',
+        'tj2560Temperature.description': '温度传感器模块。'
     }
 };

@@ -2,13 +2,14 @@
 /* eslint-disable require-jsdoc */
 function addMsg (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales.en, {
-        ARDUINOTJ2560EXT_CATEGORY: 'TJ2560',
+        ARDUINOTJ2560EXT_CATEGORY: 'MUGEN',
         ARDUINOTJ2560EXT_SETPIXELCOLOR: 'set on board led pixel %1 color %2',
         ARDUINOTJ2560EXT_FILL: 'fill on board led from pixel %1 count %2 with color %3',
         ARDUINOTJ2560EXT_COLOR: 'RGB LED strip color R %1 G %2 B %3',
         ARDUINOTJ2560EXT_SETBRIGHTNESS: 'set on board led brightness %1',
         ARDUINOTJ2560EXT_CLEAR: 'clear all on board led',
 
+        ARDUINOTJ2560EXT_PLAYSOUND: 'on board buzzer play sound with frequency %1 Hz for %2 second',
         ARDUINOTJ2560EXT_PLAYTONEFORBEAT: 'on board buzzer play tone %1 for %2 beat',
         ARDUINOTJ2560EXT_SETTEMPO: 'set on board buzzer tempo to (bpm) %1',
         ARDUINOTJ2560EXT_PLAYRINGTONE: 'on board buzzer play ringtone %1',
@@ -46,13 +47,14 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_BACK: 'back'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
-        ARDUINOTJ2560EXT_CATEGORY: 'TJ2560',
-        ARDUINOTJ2560EXT_SETPIXELCOLOR: '设置板载全彩LED像素 %1 颜色 %2',
-        ARDUINOTJ2560EXT_FILL: '板载全彩LED从像素 %1 开始 共填充 %2 颜色 %3',
-        ARDUINOTJ2560EXT_COLOR: 'RGB LED灯条颜色 R %1 G %2 B %3',
-        ARDUINOTJ2560EXT_SETBRIGHTNESS: '设置板载全彩LED亮度 %1',
-        ARDUINOTJ2560EXT_CLEAR: '清除所有板载全彩LED',
+        ARDUINOTJ2560EXT_CATEGORY: 'MUGEN',
+        ARDUINOTJ2560EXT_SETPIXELCOLOR: '设置板载全彩灯 %1 号灯颜色 %2',
+        ARDUINOTJ2560EXT_FILL: '板载全彩灯从 %1 号灯开始共填充 %2 个灯颜色 %3',
+        ARDUINOTJ2560EXT_COLOR: '颜色 R %1 G %2 B %3',
+        ARDUINOTJ2560EXT_SETBRIGHTNESS: '设置板载全彩灯亮度 %1',
+        ARDUINOTJ2560EXT_CLEAR: '清除所有板载全彩灯',
 
+        ARDUINOTJ2560EXT_PLAYSOUND: '板载蜂鸣器以频率 %1 Hz 播放声音持续 %2 秒',
         ARDUINOTJ2560EXT_PLAYTONEFORBEAT: '板载蜂鸣器播放音调 %1 持续 %2 节拍',
         ARDUINOTJ2560EXT_SETTEMPO: '设置板载蜂鸣器节奏为 (bpm) %1',
         ARDUINOTJ2560EXT_PLAYRINGTONE: '板载蜂鸣器播放铃声 %1',
