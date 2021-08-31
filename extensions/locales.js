@@ -103,7 +103,15 @@ module.exports = {
         'tj2560LaserRanging.name': 'Laser Ranging',
         'tj2560LaserRanging.description': 'Laser ranging module.',
         'tj2560Temperature.name': 'Temperature Sensor',
-        'tj2560Temperature.description': 'Temperature sensor module.'
+        'tj2560Temperature.description': 'Temperature sensor module.',
+        'tj2560Ultrasonic.name': 'Ultrasonic',
+        'tj2560Ultrasonic.description': 'Ultrasonic distance measurement module.',
+        'tj2560Martix.name': 'Martix Display',
+        'tj2560Martix.description': '8x8 martix display module.',
+        'tj2560ColorSensor.name': 'Color Sensor',
+        'tj2560ColorSensor.description': 'Color sensor module.',
+        'tj2560FourDigitalDisplay.name': '4 Digital Display',
+        'tj2560FourDigitalDisplay.description': '4 digital display module.'
     },
     'zh-cn': {
         'chineseTTS.name': '中文 TTS',
@@ -207,6 +215,14 @@ module.exports = {
         'tj2560LaserRanging.name': '激光测距',
         'tj2560LaserRanging.description': '激光测距模块。',
         'tj2560Temperature.name': '温度传感器',
-        'tj2560Temperature.description': '温度传感器模块。'
+        'tj2560Temperature.description': '温度传感器模块。',
+        'tj2560Ultrasonic.name': '超声波',
+        'tj2560Ultrasonic.description': '超声波测距模块。',
+        'tj2560Martix.name': '点阵屏',
+        'tj2560Martix.description': '8x8 点阵屏模块。',
+        'tj2560ColorSensor.name': '颜色传感器',
+        'tj2560ColorSensor.description': '颜色传感器模块。',
+        'tj2560FourDigitalDisplay.name': '4位数码管',
+        'tj2560FourDigitalDisplay.description': '4位数码管模块。'
     }
 };
