@@ -297,6 +297,14 @@ function addBlocks (Blockly) {
                             ['K1', 'A9'],
                             ['K2', 'A6']
                         ]
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'STA',
+                        options: [
+                            [Blockly.Msg.ARDUINOTJ2560EXT_BUTTONSTATE_ACTIVE, '1'],
+                            [Blockly.Msg.ARDUINOTJ2560EXT_BUTTONSTATE_INACTIVE, '0']
+                        ]
                     }
                 ],
                 colour: colour,

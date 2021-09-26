@@ -21,6 +21,14 @@ function addBlocks (Blockly) {
                             ['P5', 'P5'],
                             ['P6', 'P6']
                         ]
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'STA',
+                        options: [
+                            [Blockly.Msg.TJ2560SOILMOISTURE_STATE_WET, '1'],
+                            [Blockly.Msg.TJ2560SOILMOISTURE_STATE_DRY, '0']
+                        ]
                     }
                 ],
                 colour: colour,

@@ -21,6 +21,14 @@ function addBlocks (Blockly) {
                             ['P5', 'P5'],
                             ['P6', 'P6']
                         ]
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'STA',
+                        options: [
+                            [Blockly.Msg.TJ2560LINETRAKER_STATE_LIGHT, '1'],
+                            [Blockly.Msg.TJ2560LINETRAKER_STATE_DARK, '0']
+                        ]
                     }
                 ],
                 colour: colour,

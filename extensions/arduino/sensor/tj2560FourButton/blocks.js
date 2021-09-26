@@ -31,6 +31,14 @@ function addBlocks (Blockly) {
                             ['D', 'S6'],
                             ['L', 'S2']
                         ]
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'STA',
+                        options: [
+                            [Blockly.Msg.TJ2560FOURBUTTON_SATE_ACTIVE, '1'],
+                            [Blockly.Msg.TJ2560FOURBUTTON_SATE_INACTIVE, '0']
+                        ]
                     }
                 ],
                 colour: colour,

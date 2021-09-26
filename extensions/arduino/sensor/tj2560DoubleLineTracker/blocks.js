@@ -29,6 +29,14 @@ function addBlocks (Blockly) {
                             [Blockly.Msg.TJ2560DOUBLELINETRACKER_LEFT, 'S5'],
                             [Blockly.Msg.TJ2560DOUBLELINETRACKER_RIGHT, 'S1']
                         ]
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'STA',
+                        options: [
+                            [Blockly.Msg.TJ2560DOUBLELINETRACKER_STATE_LIGHT, '1'],
+                            [Blockly.Msg.TJ2560DOUBLELINETRACKER_STATE_DARK, '0']
+                        ]
                     }
                 ],
                 colour: colour,

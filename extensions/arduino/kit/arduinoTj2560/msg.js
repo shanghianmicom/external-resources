@@ -35,7 +35,7 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_FART2: 'fart2',
         ARDUINOTJ2560EXT_FART3: 'fart3',
 
-        ARDUINOTJ2560EXT_READKEY: 'read on board key %1',
+        ARDUINOTJ2560EXT_READKEY: 'read on board key %1 state %2',
 
         ARDUINOTJ2560EXT_INIT: 'init shift digit display length %1 pin SCLK %2 RCLK %3 DIO %4',
         ARDUINOTJ2560EXT_DISPLAYNUMBER: 'shift digit display display number %1',
@@ -46,7 +46,9 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_ONBOARDDRIVERRUN: 'on board motor driver %1 run %2 speed %3',
         ARDUINOTJ2560EXT_ONBOARDDRIVERSTOP: 'on board motor driver %1 stop',
         ARDUINOTJ2560EXT_FORWARD: 'foward',
-        ARDUINOTJ2560EXT_BACK: 'back'
+        ARDUINOTJ2560EXT_BACK: 'back',
+        ARDUINOTJ2560EXT_BUTTONSTATE_ACTIVE: 'active',
+        ARDUINOTJ2560EXT_BUTTONSTATE_INACTIVE: 'inactive'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         ARDUINOTJ2560EXT_CATEGORY: 'MUGEN',
@@ -82,7 +84,7 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_FART2: '放屁2',
         ARDUINOTJ2560EXT_FART3: '放屁3',
 
-        ARDUINOTJ2560EXT_READKEY: '读取板载按键 %1',
+        ARDUINOTJ2560EXT_READKEY: '读取板载按键 %1 状态 %2',
 
         ARDUINOTJ2560EXT_DISPLAYNUMBER: '移位数码管显示数字 %1',
         ARDUINOTJ2560EXT_CH595_SHOW: '移位数码管显示 %1 ms',
@@ -91,7 +93,9 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_ONBOARDDRIVERRUN: '板载电机驱动 %1 向 %2 速度 %3',
         ARDUINOTJ2560EXT_ONBOARDDRIVERSTOP: '板载电机驱动 %1 停止',
         ARDUINOTJ2560EXT_FORWARD: '前',
-        ARDUINOTJ2560EXT_BACK: '后'
+        ARDUINOTJ2560EXT_BACK: '后',
+        ARDUINOTJ2560EXT_BUTTONSTATE_ACTIVE: '触发',
+        ARDUINOTJ2560EXT_BUTTONSTATE_INACTIVE: '未触发'
     });
     return Blockly;
 }

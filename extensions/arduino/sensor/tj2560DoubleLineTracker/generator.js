@@ -6,11 +6,12 @@ function addGenerator (Blockly) {
     Blockly.Arduino.tj2560DoubleLineTracker_read = function (block) {
         const port = block.getFieldValue('PORT');
         const side = block.getFieldValue('SIDE');
+        const sta = block.getFieldValue('STA');
 
         Blockly.Arduino.setups_[`tj2560DoubleLineTracker_read${port}`] = `pinMode(pinMap[${port}][${side}], INPUT_PULLUP);`;
         Blockly.Arduino.includes_.arduinoTj2560Ext_onBoardDriver_io = `#include <io_tj2560.h>`;
 
-        return [`!digitalRead(pinMap[${port}][${side}])`, Blockly.Arduino.ORDER_ATOMIC];
+        return [`!digitalRead(pinMap[${port}][${side}]) == ${sta}`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
     return Blockly;

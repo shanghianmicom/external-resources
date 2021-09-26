@@ -106,12 +106,13 @@ function addGenerator (Blockly) {
         return `onBoardBuzzer.playRingtone(${no});\n`;
     };
 
-    Blockly.Arduino.arduinoTj2560Ext_readKey = function () {
+    Blockly.Arduino.arduinoTj2560Ext_readKey = function (block) {
         const key = this.getFieldValue('KEY');
+        const sta = block.getFieldValue('STA');
 
         Blockly.Arduino.setups_[`arduinoTj2560Ext_readKey_${key}`] = `pinMode(${key}, INPUT_PULLUP);`;
 
-        return [`!digitalRead(${key})`, Blockly.Arduino.ORDER_ATOMIC];
+        return [`!digitalRead(${key}) == ${sta}`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
     Blockly.Arduino.arduinoTj2560Ext_displayNumber = function (block) {
