@@ -10,11 +10,11 @@ function addMsg (Blockly) {
         TJ2560MOTORDRIVER_STOP: 'motor driver %1 stop'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
-        TJ2560MOTORDRIVER_CATEGORY: '电机驱动',
-        TJ2560MOTORDRIVER_RUN: '电机驱动 %1 %2 旋转速度 %3',
-        J2560MOTORDRIVER_CW: '顺时针',
-        J2560MOTORDRIVER_CCW: '逆时针',
-        TJ2560MOTORDRIVER_STOP: '电机驱动 %1 停止'
+        TJ2560MOTORDRIVER_CATEGORY: '电机驱动模块',
+        TJ2560MOTORDRIVER_RUN: '电机驱动模块 %1 向 %2 速度 %3',
+        J2560MOTORDRIVER_CW: '前',
+        J2560MOTORDRIVER_CCW: '后',
+        TJ2560MOTORDRIVER_STOP: '电机驱动模块 %1 停止'
     });
     return Blockly;
 }

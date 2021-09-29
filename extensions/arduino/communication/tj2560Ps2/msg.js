@@ -20,8 +20,8 @@ function addMsg (Blockly) {
         TJ2560PS2_GETJOYSTICK: 'PS2 get joystick %1'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
-        TJ2560PS2_CATEGORY: 'PS2',
-        TJ2560PS2_INIT: '初始化 ps2 接收器接口 %1',
+        TJ2560PS2_CATEGORY: 'PS2 手柄接收器',
+        TJ2560PS2_INIT: '初始化 PS2 手柄接收器接口 %1',
         TJ2560PS2_READDATA: '读取 PS2 接收器数据',
         TJ2560PS2_GETBUTTON: 'PS2 %1 按键被按下?',
         TJ2560PS2_UP: '上',
@@ -34,7 +34,7 @@ function addMsg (Blockly) {
         TJ2560PS2_SQUARE: '方块',
         TJ2560PS2_SELECT: '选择',
         TJ2560PS2_START: '开始',
-        TJ2560PS2_GETJOYSTICK: 'PS2获取摇杆 %1'
+        TJ2560PS2_GETJOYSTICK: '获取 PS2 摇杆 %1 数值'
     });
     return Blockly;
 }

@@ -6,7 +6,7 @@ function addMsg (Blockly) {
         TJ2560LIGHTINTENSITY_READ: 'read %1 light intensity'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
-        TJ2560LIGHTINTENSITY_CATEGORY: '光线传感器',
+        TJ2560LIGHTINTENSITY_CATEGORY: '光敏传感器',
         TJ2560LIGHTINTENSITY_READ: '读取 %1 光线强度'
     });
     return Blockly;

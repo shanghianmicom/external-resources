@@ -12,6 +12,23 @@ function addToolbox () {
             <shadow type="colour_picker"/>
         </value>
     </block>
+    <block type="tj2560RgbLed_color" id="tj2560RgbLed_color">
+        <value name="R">
+            <shadow type="math_uint8_number">
+                <field name="NUM">255</field>
+            </shadow>
+        </value>
+        <value name="G">
+            <shadow type="math_uint8_number">
+                <field name="NUM">255</field>
+            </shadow>
+        </value>
+        <value name="B">
+            <shadow type="math_uint8_number">
+                <field name="NUM">255</field>
+            </shadow>
+        </value>
+    </block>
 </category>`;
 }
 

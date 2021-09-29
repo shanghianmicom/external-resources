@@ -17,6 +17,14 @@ function addGenerator (Blockly) {
         return `fiveLedStrip_${port}.setPixelColor(${no} - 1, ${colour});\nfiveLedStrip_${port}.show();\n`;
     };
 
+    Blockly.Arduino.tj2560FiveRgbLed_color = function (block) {
+        const r = Blockly.Arduino.valueToCode(block, 'R', Blockly.Arduino.ORDER_ATOMIC);
+        const g = Blockly.Arduino.valueToCode(block, 'G', Blockly.Arduino.ORDER_ATOMIC);
+        const b = Blockly.Arduino.valueToCode(block, 'B', Blockly.Arduino.ORDER_ATOMIC);
+
+        return [`${(r << 16) + (g << 8) + b}`, Blockly.Arduino.ORDER_ATOMIC];
+    };
+
     Blockly.Arduino.tj2560FiveRgbLed_fill = function (block) {
         const port = block.getFieldValue('PORT');
         const first = Blockly.Arduino.valueToCode(block, 'FIRST', Blockly.Arduino.ORDER_ATOMIC);

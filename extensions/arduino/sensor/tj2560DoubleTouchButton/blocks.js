@@ -8,7 +8,7 @@ function addBlocks (Blockly) {
     Blockly.Blocks.tj2560DoubleTouchButton_read = {
         init: function () {
             this.jsonInit({
-                message0: Blockly.Msg.TJ2560FOURBUTTON_READ,
+                message0: Blockly.Msg.TJ2560DOUBLETOUCHBUTTON_READ,
                 args0: [
                     {
                         type: 'field_dropdown',
@@ -26,8 +26,16 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'SIDE',
                         options: [
-                            [Blockly.Msg.TJ2560FOURBUTTON_LEFT, 'S5'],
-                            [Blockly.Msg.TJ2560FOURBUTTON_RIGHT, 'S6']
+                            [Blockly.Msg.TJ2560DOUBLETOUCHBUTTON_LEFT, 'S5'],
+                            [Blockly.Msg.TJ2560DOUBLETOUCHBUTTON_RIGHT, 'S6']
+                        ]
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'STA',
+                        options: [
+                            [Blockly.Msg.TJ2560DOUBLETOUCHBUTTON_SATE_ACTIVE, '1'],
+                            [Blockly.Msg.TJ2560DOUBLETOUCHBUTTON_SATE_INACTIVE, '0']
                         ]
                     }
                 ],

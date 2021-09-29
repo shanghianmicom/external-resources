@@ -21,11 +21,18 @@ function addBlocks (Blockly) {
                             ['P5', 'P5'],
                             ['P6', 'P6']
                         ]
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'UNIT',
+                        options: [
+                            ['℃', 'false'],
+                            ['℉', 'true']]
                     }
                 ],
                 colour: colour,
                 secondaryColour: secondaryColour,
-                extensions: ['output_boolean']
+                extensions: ['output_number']
             });
         }
     };

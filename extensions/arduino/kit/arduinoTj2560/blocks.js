@@ -105,6 +105,7 @@ function addBlocks (Blockly) {
         }
     };
 
+    /* ---------------- 板载数码管 ------------------ */
     Blockly.Blocks.arduinoTj2560Ext_hc595Show = {
         init: function () {
             this.jsonInit({
@@ -124,6 +125,16 @@ function addBlocks (Blockly) {
                             ['7', 'B11111000'],
                             ['8', 'B10000000'],
                             ['9', 'B10010000'],
+                            ['0.', 'B01000000'],
+                            ['1.', 'B01111001'],
+                            ['2.', 'B00100100'],
+                            ['3.', 'B00110000'],
+                            ['4.', 'B00011001'],
+                            ['5.', 'B00010010'],
+                            ['6.', 'B00000010'],
+                            ['7.', 'B01111000'],
+                            ['8.', 'B00000000'],
+                            ['9.', 'B00010000'],
                             [Blockly.Msg.ARDUINOTJ2560EXT_HC595SHOWNULL, 'B11111111']
                         ]
                     }
@@ -314,7 +325,6 @@ function addBlocks (Blockly) {
         }
     };
 
-    /* ---------------- 板载数码管 ------------------ */
     Blockly.Blocks.arduinoTj2560Ext_displayNumber = {
         init: function () {
             this.jsonInit({

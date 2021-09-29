@@ -7,9 +7,9 @@ function addMsg (Blockly) {
         TJ2560DHT11_READTEMPERATURE: 'read %1 dht11 temperature'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
-        TJ2560DHT11_CATEGORY: 'DHT11',
-        TJ2560DHT11_READHUMIDITY: '读取 %1 dht11 湿度',
-        TJ2560DHT11_READTEMPERATURE: '读取 %1 dht11 温度'
+        TJ2560DHT11_CATEGORY: '温湿度传感器',
+        TJ2560DHT11_READHUMIDITY: '读取 %1 温湿度传感器湿度值',
+        TJ2560DHT11_READTEMPERATURE: '读取 %1 温湿度传感器温度值 %2'
     });
     return Blockly;
 }

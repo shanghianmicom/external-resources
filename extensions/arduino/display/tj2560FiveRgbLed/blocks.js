@@ -38,6 +38,31 @@ function addBlocks (Blockly) {
         }
     };
 
+    Blockly.Blocks.tj2560FiveRgbLed_color = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.TJ2560FIVERGBLED_COLOR,
+                args0: [
+                    {
+                        type: 'input_value',
+                        name: 'R'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'G'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'B'
+                    }
+                ],
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['output_string']
+            });
+        }
+    };
+
     Blockly.Blocks.tj2560FiveRgbLed_fill = {
         init: function () {
             this.jsonInit({

@@ -5,6 +5,7 @@ function addGenerator (Blockly) {
 
     Blockly.Arduino.tj2560Temperature_read = function (block) {
         const port = block.getFieldValue('PORT');
+        const unit = block.getFieldValue('UNIT');
 
         Blockly.Arduino.includes_.arduinoTj2560Ext_onBoardDriver_io = `#include <io_tj2560.h>`;
         Blockly.Arduino.includes_.tj2560Temperature = `#include <OneWire.h>\n#include <DallasTemperature.h>`;
@@ -15,7 +16,10 @@ function addGenerator (Blockly) {
 
         Blockly.Arduino.loops_[`tj2560Temperature_read${port}`] = `ds18b20_${port}.requestTemperatures();`;
 
-        return [`ds18b20_${port}.getTempCByIndex(0)`, Blockly.Arduino.ORDER_ATOMIC];
+        if (unit === 'false') {
+            return [`ds18b20_${port}.getTempCByIndex(0)`, Blockly.Arduino.ORDER_ATOMIC];
+        }
+        return [`ds18b20_${port}.getTempFByIndex(0)`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
     return Blockly;

@@ -59,7 +59,7 @@ function addGenerator (Blockly) {
         const data = this.getFieldValue('DATA');
 
         Blockly.Arduino.includes_.arduinoTj2560Ext_ch595init = `#include <ShiftRegister74HC595.h>`;
-        Blockly.Arduino.definitions_.arduinoTj2560Ext_pixelInit = `ShiftRegister74HC595<1> hc595(22, 24, 23);`;
+        Blockly.Arduino.definitions_.arduinoTj2560Ext_ch595init = `ShiftRegister74HC595<1> hc595(22, 24, 23);`;
 
         return `uint8_t hc595Values[] = {${data}};\nhc595.setAll(hc595Values);\n`;
     };
@@ -112,7 +112,7 @@ function addGenerator (Blockly) {
 
         Blockly.Arduino.setups_[`arduinoTj2560Ext_readKey_${key}`] = `pinMode(${key}, INPUT_PULLUP);`;
 
-        return [`!digitalRead(${key}) == ${sta}`, Blockly.Arduino.ORDER_ATOMIC];
+        return [`(!digitalRead(${key}) == ${sta})`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
     Blockly.Arduino.arduinoTj2560Ext_displayNumber = function (block) {

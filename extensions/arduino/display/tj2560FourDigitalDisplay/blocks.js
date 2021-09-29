@@ -11,6 +11,13 @@ function addBlocks (Blockly) {
                 message0: Blockly.Msg.TJ2560FOURDIGITALDISPLAY_SHOWNUMBER, // 4 digital display show number %1
                 args0: [
                     {
+                        type: 'field_dropdown',
+                        name: 'PORT',
+                        options: [
+                            ['P6', 'P6']
+                        ]
+                    },
+                    {
                         type: 'input_value',
                         name: 'NUMBER'
                     }
@@ -22,11 +29,55 @@ function addBlocks (Blockly) {
         }
     };
 
+    Blockly.Blocks.tj2560FourDigitalDisplay_showNumberBit = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.TJ2560FOURDIGITALDISPLAY_SHOWNUMBERBIT,
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'PORT',
+                        options: [
+                            ['P6', 'P6']
+                        ]
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'N1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'N2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'N3'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'N4'
+                    }
+                ],
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+
     Blockly.Blocks.tj2560FourDigitalDisplay_setDot = {
         init: function () {
             this.jsonInit({
                 message0: Blockly.Msg.TJ2560FOURDIGITALDISPLAY_SETDOT, // 4 digital display set %1 rd dot %2
                 args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'PORT',
+                        options: [
+                            ['P6', 'P6']
+                        ]
+                    },
                     {
                         type: 'field_dropdown',
                         name: 'POS',
@@ -57,6 +108,15 @@ function addBlocks (Blockly) {
         init: function () {
             this.jsonInit({
                 message0: Blockly.Msg.tj2560FourDigitalDisplay_CLEAR,
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'PORT',
+                        options: [
+                            ['P6', 'P6']
+                        ]
+                    }
+                ],
                 colour: colour,
                 secondaryColour: secondaryColour,
                 extensions: ['shape_statement']

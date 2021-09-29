@@ -32,8 +32,18 @@ function addToolbox () {
             <shadow type="colour_picker"/>
         </value>
     </block>
-    <block type="tj2560FiveRgbLed_setBrightness" id="tj2560FiveRgbLed_setBrightness">
-        <value name="BRT">
+    <block type="tj2560FiveRgbLed_color" id="tj2560FiveRgbLed_color">
+        <value name="R">
+            <shadow type="math_uint8_number">
+                <field name="NUM">255</field>
+            </shadow>
+        </value>
+        <value name="G">
+            <shadow type="math_uint8_number">
+                <field name="NUM">255</field>
+            </shadow>
+        </value>
+        <value name="B">
             <shadow type="math_uint8_number">
                 <field name="NUM">255</field>
             </shadow>

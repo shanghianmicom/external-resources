@@ -16,7 +16,8 @@ function addBlocks (Blockly) {
                         options: [
                             ['R', '0'],
                             ['G', '1'],
-                            ['B', '2']
+                            ['B', '2'],
+                            ['RGB', '3']
                         ]
                     }
                 ],

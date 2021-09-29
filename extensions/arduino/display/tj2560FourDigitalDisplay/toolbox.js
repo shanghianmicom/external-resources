@@ -14,6 +14,28 @@ function addToolbox () {
             </shadow>
         </value>
     </block>
+    <block type="tj2560FourDigitalDisplay_showNumberBit" id="tj2560FourDigitalDisplay_showNumberBit">
+        <value name="N1">
+            <shadow type="math_whole_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+        <value name="N2">
+            <shadow type="math_whole_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+        <value name="N3">
+            <shadow type="math_whole_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+        <value name="N4">
+            <shadow type="math_whole_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+    </block>
     <block type="tj2560FourDigitalDisplay_setDot" id="tj2560FourDigitalDisplay_setDot"></block>
     <block type="tj2560FourDigitalDisplay_clear" id="tj2560FourDigitalDisplay_clear"></block>
 </category>`;
