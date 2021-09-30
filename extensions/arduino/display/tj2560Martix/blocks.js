@@ -2,8 +2,8 @@
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
 function addBlocks (Blockly) {
-    const colour = '#CE0000';
-    const secondaryColour = '#AE0000';
+    const colour = '#06603e';
+    const secondaryColour = '#06603e';
 
     Blockly.Blocks.eitghtTimesEightMatirxDisplay_drawPixel = {
         init: function () {

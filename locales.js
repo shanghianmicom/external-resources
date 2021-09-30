@@ -111,7 +111,9 @@ module.exports = {
         'tj2560ColorSensor.name': 'Color Sensor',
         'tj2560ColorSensor.description': 'Color sensor module.',
         'tj2560FourDigitalDisplay.name': '4 Digital Display',
-        'tj2560FourDigitalDisplay.description': '4 digital display module.'
+        'tj2560FourDigitalDisplay.description': '4 digital display module.',
+        'tj2560SpeechRecognition.name': 'Speech Recognition Module',
+        'tj2560SpeechRecognition.description': 'Speech recognition Module.'
     },
     'zh-cn': {
         'chineseTTS.name': '中文 TTS',
@@ -223,6 +225,8 @@ module.exports = {
         'tj2560ColorSensor.name': '颜色传感器',
         'tj2560ColorSensor.description': '颜色传感器模块。',
         'tj2560FourDigitalDisplay.name': '数码管模块',
-        'tj2560FourDigitalDisplay.description': '四位数码管模块。'
+        'tj2560FourDigitalDisplay.description': '四位数码管模块。',
+        'tj2560SpeechRecognition.name': '语音识别模块',
+        'tj2560SpeechRecognition.description': '语音识别模块。'
     }
 };
