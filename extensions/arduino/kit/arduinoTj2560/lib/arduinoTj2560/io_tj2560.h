@@ -16,6 +16,9 @@
 #define M3 8
 #define M4 9
 
+#define E1 10
+#define E4 11
+
 #define S1 0
 #define S2 1
 #define S5 2
@@ -25,7 +28,7 @@
 
 #define NC 0
 
-const uint8_t pinMap[10][4] =
+const uint8_t pinMap[12][4] =
 {
     {A4, A5,  4,  5},   // P1
     {A1, A0, 37,  6},   // P2
@@ -38,6 +41,9 @@ const uint8_t pinMap[10][4] =
     {43, 48, 46, NC}, // M2
     {47, 49, 45, NC}, // M3
     {40, 41, 44, NC}, // M4
+
+    { 3,  2, NC, NC}, // E1
+    {18, 19, NC, NC}, // E4
 };
 
 #endif

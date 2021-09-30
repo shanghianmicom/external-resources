@@ -162,6 +162,26 @@ function addGenerator (Blockly) {
         return `onBoardDriver_${port}.stop();\n`;
     };
 
+    Blockly.Arduino.arduinoTj2560Ext_onBoardEncoderRead = function (block) {
+        const port = block.getFieldValue('PORT');
+
+        Blockly.Arduino.includes_.arduinoTj2560Ext_onBoardDriver_io = `#include <io_tj2560.h>`;
+        Blockly.Arduino.includes_.arduinoTj2560Ext_onBoardEncoderRead = `#include <Encoder.h>`;
+        Blockly.Arduino.definitions_[`arduinoTj2560Ext_onBoardEncoderRead_${port}`] = `Encoder onBoardEncoder_${port}(pinMap[${port}][S1], pinMap[${port}][S2]);`;
+
+        return [`onBoardEncoder_${port}.read()`, Blockly.Arduino.ORDER_ATOMIC];
+    };
+
+    Blockly.Arduino.arduinoTj2560Ext_onBoardEncoderReset = function (block) {
+        const port = block.getFieldValue('PORT');
+
+        Blockly.Arduino.includes_.arduinoTj2560Ext_onBoardDriver_io = `#include <io_tj2560.h>`;
+        Blockly.Arduino.includes_.arduinoTj2560Ext_onBoardEncoderRead = `#include <Encoder.h>`;
+        Blockly.Arduino.definitions_[`arduinoTj2560Ext_onBoardEncoderRead_${port}`] = `Encoder onBoardEncoder_${port}(pinMap[${port}][S1], pinMap[${port}][S2]);`;
+
+        return `onBoardEncoder_${port}.readAndReset();\n`;
+    };
+
 
     return Blockly;
 }

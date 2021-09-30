@@ -48,7 +48,10 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_FORWARD: 'foward',
         ARDUINOTJ2560EXT_BACK: 'back',
         ARDUINOTJ2560EXT_BUTTONSTATE_ACTIVE: 'active',
-        ARDUINOTJ2560EXT_BUTTONSTATE_INACTIVE: 'inactive'
+        ARDUINOTJ2560EXT_BUTTONSTATE_INACTIVE: 'inactive',
+
+        ARDUINOTJ2560EXT_ONBOARDENCODERREAD: 'read on board encoder value',
+        ARDUINOTJ2560EXT_ONBOARDENCODERRESET: 'reset on board encoder value'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         ARDUINOTJ2560EXT_CATEGORY: 'MUGEN',
@@ -95,7 +98,10 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_FORWARD: '前',
         ARDUINOTJ2560EXT_BACK: '后',
         ARDUINOTJ2560EXT_BUTTONSTATE_ACTIVE: '触发',
-        ARDUINOTJ2560EXT_BUTTONSTATE_INACTIVE: '未触发'
+        ARDUINOTJ2560EXT_BUTTONSTATE_INACTIVE: '未触发',
+
+        ARDUINOTJ2560EXT_ONBOARDENCODERREAD: '读取板载编码器 %1 数值',
+        ARDUINOTJ2560EXT_ONBOARDENCODERRESET: '重置板载编码器 %1 数值'
     });
     return Blockly;
 }

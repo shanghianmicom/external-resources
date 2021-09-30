@@ -418,6 +418,49 @@ function addBlocks (Blockly) {
         }
     };
 
+    /* ---------------- 编码器 ------------------ */
+    Blockly.Blocks.arduinoTj2560Ext_onBoardEncoderRead = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_ONBOARDENCODERREAD,
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'PORT',
+                        options: [
+                            ['M1', 'E1'],
+                            ['M4', 'E4']
+                        ]
+                    }
+                ],
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['output_number']
+            });
+        }
+    };
+
+    Blockly.Blocks.arduinoTj2560Ext_onBoardEncoderReset = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_ONBOARDENCODERRESET,
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'PORT',
+                        options: [
+                            ['M1', 'E1'],
+                            ['M4', 'E4']
+                        ]
+                    }
+                ],
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
     return Blockly;
 }
 

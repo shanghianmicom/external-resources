@@ -95,26 +95,10 @@ function addToolbox () {
     </block>
     <block type="arduinoTj2560Ext_onBoardDriverStop" id="arduinoTj2560Ext_onBoardDriverStop">
     </block>
-    <sep gap="36"/>` +
-
-    // `<block type="arduinoTj2560Ext_displayNumber" id="arduinoTj2560Ext_displayNumber">
-    //     <value name="NUM">
-    //         <shadow type="math_number">
-    //             <field name="NUM">0</field>
-    //         </shadow>
-    //     </value>
-    // </block>
-    // <block type="arduinoTj2560Ext_ch595_show" id="arduinoTj2560Ext_ch595_show">
-    //     <value name="TIME">
-    //         <shadow type="math_integer">
-    //             <field name="NUM">10</field>
-    //         </shadow>
-    //     </value>
-    // </block>
-    // <sep gap="36"/>` +
-
-    `<block type="arduinoTj2560Ext_readKey" id="arduinoTj2560Ext_readKey">
-    </block>
+    <block type="arduinoTj2560Ext_onBoardEncoderRead" id="arduinoTj2560Ext_onBoardEncoderRead"></block>
+    <block type="arduinoTj2560Ext_onBoardEncoderReset" id="arduinoTj2560Ext_onBoardEncoderReset"></block>
+    <sep gap="36"/>
+    <block type="arduinoTj2560Ext_readKey" id="arduinoTj2560Ext_readKey"></block>
 </category>
 `;
 }
