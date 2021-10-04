@@ -113,7 +113,11 @@ module.exports = {
         'tj2560FourDigitalDisplay.name': '4 Digital Display',
         'tj2560FourDigitalDisplay.description': '4 digital display module.',
         'tj2560SpeechRecognition.name': 'Speech Recognition Module',
-        'tj2560SpeechRecognition.description': 'Speech recognition Module.'
+        'tj2560SpeechRecognition.description': 'Speech recognition Module.',
+        'tj2560Esp32RemoteControl.name': 'Wireless Remote Control',
+        'tj2560Esp32RemoteControl.description': 'Esp32 Wireless remote control.',
+        'tj2560OpenMv.name': 'Camera Module',
+        'tj2560OpenMv.description': 'Camera Module.'
     },
     'zh-cn': {
         'chineseTTS.name': '中文 TTS',
@@ -227,6 +231,10 @@ module.exports = {
         'tj2560FourDigitalDisplay.name': '数码管模块',
         'tj2560FourDigitalDisplay.description': '四位数码管模块。',
         'tj2560SpeechRecognition.name': '语音识别模块',
-        'tj2560SpeechRecognition.description': '语音识别模块。'
+        'tj2560SpeechRecognition.description': '语音识别模块。',
+        'tj2560Esp32RemoteControl.name': '无线遥控器',
+        'tj2560Esp32RemoteControl.description': 'Esp32 无线遥控器模块。',
+        'tj2560OpenMv.name': '视觉模块',
+        'tj2560OpenMv.description': 'OpenMV 视觉模块。'
     }
 };
