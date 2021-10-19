@@ -50,8 +50,8 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_BUTTONSTATE_ACTIVE: 'active',
         ARDUINOTJ2560EXT_BUTTONSTATE_INACTIVE: 'inactive',
 
-        ARDUINOTJ2560EXT_ONBOARDENCODERREAD: 'read on board encoder value',
-        ARDUINOTJ2560EXT_ONBOARDENCODERRESET: 'reset on board encoder value'
+        ARDUINOTJ2560EXT_ONBOARDENCODERREAD: 'read on board encoder %1 value',
+        ARDUINOTJ2560EXT_ONBOARDENCODERRESET: 'reset on board encoder %1 value'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         ARDUINOTJ2560EXT_CATEGORY: 'MUGEN',
