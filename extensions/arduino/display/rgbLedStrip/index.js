@@ -5,7 +5,7 @@ const rgbLedStrip = formatMessage => ({
     }),
     extensionId: 'rgbLedStrip',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
+    supportDevice: ['unoCore', 'arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'ArthurZheng',
     iconURL: `asset/rgbLedStrip.png`,

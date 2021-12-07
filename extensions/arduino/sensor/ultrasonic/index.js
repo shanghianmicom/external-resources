@@ -5,7 +5,7 @@ const ultrasonic = formatMessage => ({
     }),
     extensionId: 'ultrasonic',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
+    supportDevice: ['unoCore', 'arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'Liang',
     iconURL: `asset/ultrasonic.png`,
