@@ -20,7 +20,7 @@ const tm1640 = formatMessage => ({
     msg: 'msg.js',
     library: 'lib',
     tags: ['display'],
-    helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    helpLink: ''
 });
 
 module.exports = tm1640;
