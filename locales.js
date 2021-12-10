@@ -55,6 +55,8 @@ module.exports = {
         'softwareSerial.description': 'Allow serial communication on other digital pins of the Arduino.',
         'softwareSerial.name': 'Software Serial',
         'tcs3200.description': 'Color sensor module based on TCS3200.',
+        'tm1640.name': '8x16 LED Matrix',
+        'tm1640.description': 'LED Matrix module based on Tm1640.',
         'u8g2.description': 'U8g2 is a general graphics library for multiple screens, which is suitable for LCD (base on ST7920) or OLED (base on SSD1306) screens.',
         'ultrasonic.description': 'Standard ultrasonic distance measurement module.',
         'ultrasonic.name': 'Ultrasonic'
@@ -114,6 +116,8 @@ module.exports = {
         'softwareSerial.description': '使 Arduino 可以使用其他数字口进行串口通信。',
         'softwareSerial.name': '软件串口',
         'tcs3200.description': '基于 TCS3200 的颜色传感器模块。',
+        'tm1640.name': '8x16 LED点阵',
+        'tm1640.description': '基于Tm640的LED点阵模块.',
         'u8g2.description': 'U8g2 是一个适配多种屏幕的通用图形库，适用于 LCD（基于ST7920）或 OLED（基于SSD1306）屏幕。',
         'ultrasonic.description': '标准的超声波测距传感器模块。',
         'ultrasonic.name': '超声波'
