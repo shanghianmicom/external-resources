@@ -112,6 +112,29 @@ function addBlocks (Blockly) {
         }
     };
 
+    Blockly.Blocks.tm1640_y = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                args0: [
+                    {
+                        type: 'field_slider',
+                        name: 'NUM',
+                        value: '7',
+                        precision: 1,
+                        min: '0',
+                        max: '15'
+                    }
+                ],
+                output: 'Number',
+                outputShape: Blockly.OUTPUT_SHAPE_ROUND,
+                colour: Blockly.Colours.textField,
+                colourSecondary: Blockly.Colours.textField,
+                colourTertiary: Blockly.Colours.textField
+            });
+        }
+    };
+
     Blockly.Blocks.tm1640_drawStr = {
         init: function () {
             this.jsonInit({

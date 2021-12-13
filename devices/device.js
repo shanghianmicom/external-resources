@@ -10,9 +10,5 @@ module.exports = [
     'arduinoEsp8266',
     'microbit',
     'microbitV2',
-    'makeyMakey',
-    // Third party
-    'ironKit_arduinoUno',
-    'QDPRobot_arduinoUnoUltra',
-    'QDPRobotC02_arduinoEsp32'
+    'makeyMakey'
 ];

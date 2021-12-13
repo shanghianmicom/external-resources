@@ -25,6 +25,12 @@ function addGenerator (Blockly) {
         return `tm1640_${num}.setBrightness(${brightness});\n`;
     };
 
+    Blockly.Arduino.tm1640_y = function (block) {
+        const num = block.getFieldValue('NUM');
+
+        return [`${num}`, Blockly.Arduino.ORDER_ATOMIC];
+    };
+
     Blockly.Arduino.tm1640_drawStr  = function (block) {
         const num = block.getFieldValue('NUM');
         const posx = Blockly.Arduino.valueToCode(block, 'X', Blockly.Arduino.ORDER_ATOMIC);

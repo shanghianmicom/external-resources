@@ -24,7 +24,7 @@ function addToolbox () {
             </shadow>
         </value>
         <value name="Y">
-            <shadow type="math_whole_number">
+            <shadow type="tm1640_y">
                 <field name="NUM">7</field>
             </shadow>
         </value>
