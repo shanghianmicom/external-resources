@@ -5,147 +5,6 @@ function addBlocks (Blockly) {
     const colour = '#4C97FF';
     const secondaryColour = '#3373CC';
 
-    /* ---------------- 板载 rgb led ------------------ */
-    Blockly.Blocks.arduinoTj2560Ext_setPixelColor = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_SETPIXELCOLOR,
-                args0: [
-                    {
-                        type: 'input_value',
-                        name: 'NO'
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'COLOR'
-                    }
-                ],
-                colour: colour,
-                secondaryColour: secondaryColour,
-                extensions: ['shape_statement']
-            });
-        }
-    };
-
-    Blockly.Blocks.arduinoTj2560Ext_fill = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_FILL,
-                args0: [
-                    {
-                        type: 'input_value',
-                        name: 'FIRST'
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'COUNT'
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'COLOR'
-                    }
-                ],
-                colour: colour,
-                secondaryColour: secondaryColour,
-                extensions: ['shape_statement']
-            });
-        }
-    };
-
-    Blockly.Blocks.arduinoTj2560Ext_color = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_COLOR,
-                args0: [
-                    {
-                        type: 'input_value',
-                        name: 'R'
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'G'
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'B'
-                    }
-                ],
-                colour: colour,
-                secondaryColour: secondaryColour,
-                extensions: ['output_string']
-            });
-        }
-    };
-
-    Blockly.Blocks.arduinoTj2560Ext_setBrightness = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_SETBRIGHTNESS,
-                args0: [
-                    {
-                        type: 'input_value',
-                        name: 'BRT'
-                    }
-                ],
-                colour: colour,
-                secondaryColour: secondaryColour,
-                extensions: ['shape_statement']
-            });
-        }
-    };
-
-    Blockly.Blocks.arduinoTj2560Ext_clear = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_CLEAR,
-                colour: colour,
-                secondaryColour: secondaryColour,
-                extensions: ['shape_statement']
-            });
-        }
-    };
-
-    /* ---------------- 板载数码管 ------------------ */
-    Blockly.Blocks.arduinoTj2560Ext_hc595Show = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_HC595SHOW,
-                args0: [
-                    {
-                        type: 'field_dropdown',
-                        name: 'DATA',
-                        options: [
-                            ['0', 'B11000000'],
-                            ['1', 'B11111001'],
-                            ['2', 'B10100100'],
-                            ['3', 'B10110000'],
-                            ['4', 'B10011001'],
-                            ['5', 'B10010010'],
-                            ['6', 'B10000010'],
-                            ['7', 'B11111000'],
-                            ['8', 'B10000000'],
-                            ['9', 'B10010000'],
-                            ['0.', 'B01000000'],
-                            ['1.', 'B01111001'],
-                            ['2.', 'B00100100'],
-                            ['3.', 'B00110000'],
-                            ['4.', 'B00011001'],
-                            ['5.', 'B00010010'],
-                            ['6.', 'B00000010'],
-                            ['7.', 'B01111000'],
-                            ['8.', 'B00000000'],
-                            ['9.', 'B00010000'],
-                            [Blockly.Msg.ARDUINOTJ2560EXT_HC595SHOWNULL, 'B11111111']
-                        ]
-                    }
-                ],
-                colour: colour,
-                secondaryColour: secondaryColour,
-                extensions: ['shape_statement']
-            });
-        }
-    };
-
     /* ---------------- 板载蜂鸣器 ------------------ */
     const note = [
         ['C3', 'note_C3'],
@@ -295,71 +154,6 @@ function addBlocks (Blockly) {
         }
     };
 
-    /* ---------------- 板载按键 ------------------ */
-    Blockly.Blocks.arduinoTj2560Ext_readKey = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_READKEY, // read on board key %1
-                args0: [
-                    {
-                        type: 'field_dropdown',
-                        name: 'KEY',
-                        options: [
-                            ['K1', 'A9'],
-                            ['K2', 'A6']
-                        ]
-                    },
-                    {
-                        type: 'field_dropdown',
-                        name: 'STA',
-                        options: [
-                            [Blockly.Msg.ARDUINOTJ2560EXT_BUTTONSTATE_ACTIVE, '1'],
-                            [Blockly.Msg.ARDUINOTJ2560EXT_BUTTONSTATE_INACTIVE, '0']
-                        ]
-                    }
-                ],
-                colour: colour,
-                secondaryColour: secondaryColour,
-                extensions: ['output_boolean']
-            });
-        }
-    };
-
-    Blockly.Blocks.arduinoTj2560Ext_displayNumber = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_DISPLAYNUMBER,
-                args0: [
-                    {
-                        type: 'input_value',
-                        name: 'NUM'
-                    }
-                ],
-                colour: colour,
-                secondaryColour: secondaryColour,
-                extensions: ['shape_statement']
-            });
-        }
-    };
-
-    Blockly.Blocks.arduinoTj2560Ext_ch595_show = {
-        init: function () {
-            this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_CH595_SHOW,
-                args0: [
-                    {
-                        type: 'input_value',
-                        name: 'TIME'
-                    }
-                ],
-                tooltip: Blockly.Msg.ARDUINOTJ2560EXT_REFRESH_TOOLTIP,
-                colour: colour,
-                secondaryColour: secondaryColour,
-                extensions: ['shape_statement']
-            });
-        }
-    };
-
     /* ---------------- 板载驱动 ------------------ */
     Blockly.Blocks.arduinoTj2560Ext_onBoardDriverRun = {
         init: function () {
@@ -457,6 +251,115 @@ function addBlocks (Blockly) {
                 colour: colour,
                 secondaryColour: secondaryColour,
                 extensions: ['shape_statement']
+            });
+        }
+    };
+
+    /* ---------------- 板载蓝牙 ------------------ */
+    Blockly.Blocks.arduinoTj2560Ext_bluetoothPrint = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_BLUETOOTHPRINT,
+                args0: [
+                    {
+                        type: 'input_value',
+                        name: 'DATA'
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'EOL',
+                        options: [
+                            [Blockly.Msg.ARDUINOTJ2560EXT_WARP, '0'],
+                            [Blockly.Msg.ARDUINOTJ2560EXT_NOWARP, '1']
+                        ]
+                    }
+                ],
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.arduinoTj2560Ext_bluetoothAvailable = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_BLUETOOTHAVAILABLE,
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['output_number']
+            });
+        }
+    };
+
+    Blockly.Blocks.arduinoTj2560Ext_bluetoothReadAByte = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_BLUETOOTHREADABYTE,
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['output_string']
+            });
+        }
+    };
+
+    Blockly.Blocks.arduinoTj2560Ext_irRecive = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_IRRECIVE, // recive ir remoter channel %1 key %2 pressed?
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'CH',
+                        options: [
+                            ['1', '0'],
+                            ['2', '1'],
+                            ['3', '2'],
+                            ['4', '3'],
+                        ]
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'KEY',
+                        options: [
+                            ['1', '0'],
+                            ['2', '1'],
+                            ['3', '2'],
+                            ['4', '3'],
+                            ['5', '4'],
+                            ['6', '5'],
+                            ['7', '6'],
+                            ['8', '7'],
+                            ['9', '8'],
+                            ['0', '9'],
+                            ['▲', '10'],
+                            ['▼', '11'],
+                            ['▶', '12'],
+                            ['◀', '13'],
+                            ['A', '14'],
+                            [Blockly.Msg.ARDUINOTJ2560EXT_POWER, '15'],
+                            ['C', '16'],
+                            ['E', '17'],
+                            ['P2', '18'],
+                            ['B', '19'],
+                            ['△', '20'],
+                            ['*', '21'],
+                            ['G', '22'],
+                            ['#', '23'],
+                            ['P1', '24'],
+                            ['■', '25'],
+                            ['D', '26'],
+                            ['◁', '27'],
+                            ['□', '28'],
+                            ['▷', '29'],
+                            ['▽', '30'],
+                            ['F', '31'],
+                        ]
+                    }
+                ],
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['output_boolean']
             });
         }
     };
