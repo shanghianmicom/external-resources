@@ -44,6 +44,14 @@ function addToolbox () {
     <block type="arduinoTj2560Ext_onBoardEncoderRead" id="arduinoTj2560Ext_onBoardEncoderRead"></block>
     <block type="arduinoTj2560Ext_onBoardEncoderReset" id="arduinoTj2560Ext_onBoardEncoderReset"></block>
     <sep gap="36"/>
+    <block type="arduinoTj2560Ext_setServo" id="arduinoTj2560Ext_setServo">
+        <value name="ANGLE">
+            <shadow type="math_angle">
+                <field name="NUM">90</field>
+            </shadow>
+        </value>
+    </block>
+    <sep gap="36"/>
     <block type="arduinoTj2560Ext_bluetoothPrint" id="arduinoTj2560Ext_bluetoothPrint">
         <value name="DATA">
             <shadow type="text">

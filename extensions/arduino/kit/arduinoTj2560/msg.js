@@ -38,7 +38,8 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_BLUETOOTHAVAILABLE: 'bluetooth available data length',
         ARDUINOTJ2560EXT_BLUETOOTHREADABYTE: 'bluetooth read a byte',
         ARDUINOTJ2560EXT_IRRECIVE: 'recive ir remoter channel %1 key %2 pressed?',
-        ARDUINOTJ2560EXT_POWER: 'power'
+        ARDUINOTJ2560EXT_POWER: 'power',
+        ARDUINOTJ2560EXT_SETSERVO: 'set %1 servo angle %2'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         ARDUINOTJ2560EXT_CATEGORY: 'MUGEN',
@@ -77,7 +78,8 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_BLUETOOTHAVAILABLE: '蓝牙模块可用数据长度',
         ARDUINOTJ2560EXT_BLUETOOTHREADABYTE: '蓝牙模块读取一个字节',
         ARDUINOTJ2560EXT_IRRECIVE: '接收到红外遥控通道 %1 按键 %2 按下?',
-        ARDUINOTJ2560EXT_POWER: '电源'
+        ARDUINOTJ2560EXT_POWER: '电源',
+        ARDUINOTJ2560EXT_SETSERVO: '设置 %1 舵机角度 %2'
     });
     return Blockly;
 }

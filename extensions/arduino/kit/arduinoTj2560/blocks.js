@@ -255,6 +255,36 @@ function addBlocks (Blockly) {
         }
     };
 
+    /* ---------------- 舵机 ------------------ */
+    Blockly.Blocks.arduinoTj2560Ext_setServo = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_SETSERVO, // set %1 servo angle %2
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'PORT',
+                        options: [
+                            ['P1', 'P1'],
+                            ['P2', 'P2'],
+                            ['P3', 'P3'],
+                            ['P4', 'P4'],
+                            ['P5', 'P5'],
+                            ['P6', 'P6']
+                        ]
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'ANGLE'
+                    }
+                ],
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
     /* ---------------- 板载蓝牙 ------------------ */
     Blockly.Blocks.arduinoTj2560Ext_bluetoothPrint = {
         init: function () {
@@ -315,7 +345,7 @@ function addBlocks (Blockly) {
                             ['1', '0'],
                             ['2', '1'],
                             ['3', '2'],
-                            ['4', '3'],
+                            ['4', '3']
                         ]
                     },
                     {
@@ -353,7 +383,7 @@ function addBlocks (Blockly) {
                             ['□', '28'],
                             ['▷', '29'],
                             ['▽', '30'],
-                            ['F', '31'],
+                            ['F', '31']
                         ]
                     }
                 ],

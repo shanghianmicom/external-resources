@@ -1,8 +1,8 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator(Blockly) {
-    
+function addGenerator (Blockly) {
+
     Blockly.Arduino.arduinoTj2560Ext_playSound = function (block) {
         const freq = Blockly.Arduino.valueToCode(block, 'FREQ', Blockly.Arduino.ORDER_ATOMIC);
         const time = Blockly.Arduino.valueToCode(block, 'TIME', Blockly.Arduino.ORDER_ATOMIC);
@@ -83,7 +83,20 @@ function addGenerator(Blockly) {
         return `onBoardEncoder_${port}.readAndReset();\n`;
     };
 
-    
+    Blockly.Arduino.arduinoTj2560Ext_setServo = function (block) {
+        const port = block.getFieldValue('PORT');
+        const angle = Blockly.Arduino.valueToCode(block, 'ANGLE', Blockly.Arduino.ORDER_ATOMIC);
+
+        Blockly.Arduino.includes_.arduinoTj2560Ext_onBoardDriver_io = `#include <io_tj2560.h>`;
+        Blockly.Arduino.includes_.arduinoTj2560Ext_setServo = `#include <Servo.h>`;
+
+        Blockly.Arduino.definitions_[`setServo${port}`] = `Servo servo_${port};`;
+        Blockly.Arduino.setups_[`setServo${port}`] = `servo_${port}.attach(pinMap[${port}][S6]);`;
+
+        const code = `servo_${port}.write(${angle});\n`;
+        return code;
+    };
+
     Blockly.Arduino.softwareSerial_begin = function (block) {
         const no = Blockly.Arduino.valueToCode(block, 'NO', Blockly.Arduino.ORDER_ATOMIC);
         const rx = Blockly.Arduino.valueToCode(block, 'RX', Blockly.Arduino.ORDER_ATOMIC);
@@ -139,6 +152,7 @@ bool irRecive(uint8_t ch, uint8_t key) {
         return false;
     }
 }`;
+        Blockly.Arduino.setups_.arduinoTj2560Ext_irRecive = `ir.enableIRIn();`;
 
         const ch = this.getFieldValue('CH');
         const key = this.getFieldValue('KEY');

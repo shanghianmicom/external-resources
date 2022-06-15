@@ -8,6 +8,7 @@ function addGenerator (Blockly) {
 
         Blockly.Arduino.includes_.irRemoteReceiver_init = '#include <IRremote.h>';
         Blockly.Arduino.definitions_.irRemoteReceiver_init = `IRrecv irRemoteReceiver(${pin});`;
+        Blockly.Arduino.setups_.irRemoteReceiver_init = `irRemoteReceiver.enableIRIn();`;
 
         return `irRemoteReceiver.enableIRIn();\n`;
     };
