@@ -19,7 +19,7 @@ function addGenerator (Blockly) {
         Blockly.Arduino.setups_[`tj2560Sound_readAnalog${port}`] = `pinMode(pinMap[${port}][S1], INPUT);`;
         Blockly.Arduino.includes_.arduinoTj2560Ext_onBoardDriver_io = `#include <io_tj2560.h>`;
 
-        return [`analogRead(pinMap[${port}][S1])`, Blockly.Arduino.ORDER_ATOMIC];
+        return [`map(constrain(analogRead(pinMap[${port}][S1]), 0, 850), 0, 850, 0, 1023)`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
     return Blockly;
