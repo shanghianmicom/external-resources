@@ -336,7 +336,18 @@ function addBlocks (Blockly) {
     Blockly.Blocks.arduinoTj2560Ext_irRecive = {
         init: function () {
             this.jsonInit({
-                message0: Blockly.Msg.ARDUINOTJ2560EXT_IRRECIVE, // recive ir remoter channel %1 key %2 pressed?
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_IRRECIVE,
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.arduinoTj2560Ext_isIrPress = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_ISIRPRESS,
                 args0: [
                     {
                         type: 'field_dropdown',

@@ -140,24 +140,43 @@ function addGenerator (Blockly) {
         Blockly.Arduino.includes_.arduinoTj2560Ext_irRecive = `#include <IRremote.h>\n#include <tjIRRemoter.h>`;
         Blockly.Arduino.definitions_.arduinoTj2560Ext_irRecive =
 `IRrecv ir(9);
+uint32_t irCode = 0;
 
-bool irRecive(uint8_t ch, uint8_t key) {
-    if (ir.decode()) {
-        if (ir.decodedIRData.decodedRawData == IRRCCodeList[key][ch]) {
-            return true;
-        } else {
-            return false;
-        }
+void irRecive() {
+    decode_results results;
+    if (ir.decode(&results)) {
+        irCode = results.value;
+        ir.resume();
     } else {
-        return false;
+        irCode = 0;
     }
 }`;
-        Blockly.Arduino.setups_.arduinoTj2560Ext_irRecive = `ir.enableIRIn();`;
+        Blockly.Arduino.setups_.arduinoTj2560Ext_isIrPress = `ir.enableIRIn();`;
+
+        return `irRecive();\n`;
+    };
+
+    Blockly.Arduino.arduinoTj2560Ext_isIrPress = function () {
+        Blockly.Arduino.includes_.arduinoTj2560Ext_irRecive = `#include <IRremote.h>\n#include <tjIRRemoter.h>`;
+        Blockly.Arduino.definitions_.arduinoTj2560Ext_irRecive =
+`IRrecv ir(9);
+uint32_t irCode = 0;
+
+void irRecive() {
+    decode_results results;
+    if (ir.decode(&results)) {
+        irCode = results.value;
+        ir.resume();
+    } else {
+        irCode = 0;
+    }
+}`;
+        Blockly.Arduino.setups_.arduinoTj2560Ext_isIrPress = `ir.enableIRIn();`;
 
         const ch = this.getFieldValue('CH');
         const key = this.getFieldValue('KEY');
 
-        return [`irRecive(${ch}, ${key})`, Blockly.Arduino.ORDER_ATOMIC];
+        return [`irCode == IRRCCodeList[${key}][${ch}]`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
     return Blockly;

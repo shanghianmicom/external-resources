@@ -1378,8 +1378,8 @@ bool IRrecv::decode(decode_results *aResults) {
     }
 
     if (!sDeprecationMessageSent) {
-        Serial.println(
-                "The function decode(&results)) is deprecated and may not work as expected! Just use decode() without a parameter and IrReceiver.decodedIRData.<fieldname> .");
+        // Serial.println(
+        //         "The function decode(&results)) is deprecated and may not work as expected! Just use decode() without a parameter and IrReceiver.decodedIRData.<fieldname> .");
         sDeprecationMessageSent = true;
     }
 

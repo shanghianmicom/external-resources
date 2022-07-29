@@ -37,7 +37,8 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_NOWARP: 'no-warp',
         ARDUINOTJ2560EXT_BLUETOOTHAVAILABLE: 'bluetooth available data length',
         ARDUINOTJ2560EXT_BLUETOOTHREADABYTE: 'bluetooth read a byte',
-        ARDUINOTJ2560EXT_IRRECIVE: 'recive ir remoter channel %1 key %2 pressed?',
+        ARDUINOTJ2560EXT_IRRECIVE: 'read ir remoter data',
+        ARDUINOTJ2560EXT_ISIRPRESS: 'ir remoter channel %1 key %1 is press?',
         ARDUINOTJ2560EXT_POWER: 'power',
         ARDUINOTJ2560EXT_SETSERVO: 'set %1 servo angle %2'
     });
@@ -77,7 +78,8 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_NOWARP: '不换行',
         ARDUINOTJ2560EXT_BLUETOOTHAVAILABLE: '蓝牙模块可用数据长度',
         ARDUINOTJ2560EXT_BLUETOOTHREADABYTE: '蓝牙模块读取一个字节',
-        ARDUINOTJ2560EXT_IRRECIVE: '接收到红外遥控通道 %1 按键 %2 按下?',
+        ARDUINOTJ2560EXT_IRRECIVE: '读取红外遥控数据',
+        ARDUINOTJ2560EXT_ISIRPRESS: '红外遥控器通道 %1 按键 %2 被按下?',
         ARDUINOTJ2560EXT_POWER: '电源',
         ARDUINOTJ2560EXT_SETSERVO: '设置 %1 舵机角度 %2'
     });
