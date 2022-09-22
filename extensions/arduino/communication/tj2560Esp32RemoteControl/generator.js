@@ -19,8 +19,8 @@ function addGenerator (Blockly) {
     };
 
     Blockly.Arduino.tj2560Esp32RemoteControl_getJoystick = function () {
-        const button = this.getFieldValue('BUTTON');
-        const code = `esp_rc.${button}`;
+        const joystick = this.getFieldValue('JOYSTICK');
+        const code = `esp_rc.${joystick}`;
 
         return [code, Blockly.Arduino.ORDER_ATOMIC];
     };
