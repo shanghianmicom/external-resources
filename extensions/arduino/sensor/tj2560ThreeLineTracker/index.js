@@ -4,7 +4,7 @@ const tj2560ThreeLineTracker = formatMessage => ({
         default: '3 Line Tracker'
     }),
     extensionId: 'tj2560ThreeLineTracker',
-    version: '1.0.0',
+    version: '1.0.1',
     supportDevice: ['arduinoTj2560'],
     author: 'ArthurZheng',
     iconURL: `asset/tj2560ThreeLineTracker.jpg`,

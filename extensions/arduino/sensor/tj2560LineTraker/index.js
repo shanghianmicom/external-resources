@@ -4,7 +4,7 @@ const tj2560LineTraker = formatMessage => ({
         default: 'Line Tracker'
     }),
     extensionId: 'tj2560LineTraker',
-    version: '1.0.0',
+    version: '1.0.1',
     supportDevice: ['arduinoTj2560'],
     author: 'ArthurZheng',
     iconURL: `asset/tj2560LineTraker.jpg`,
