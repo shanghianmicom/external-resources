@@ -14,7 +14,7 @@ L298N::L298N(uint8_t pinEnable, uint8_t pinIN1, uint8_t pinIN2)
 void L298N::run(int direction, int speed)
 {
   //__________修复主板重启电机bug___________________________________________________
-  if(direction == 0){	 //第一次赋值
+  if(_start_direction == 0){	 //第一次赋值
 	_start_speed = speed;
 	_start_direction = direction;
 }
@@ -26,7 +26,7 @@ void L298N::run(int direction, int speed)
         delay(50);
       }
     } else if (_start_speed < 0 && speed < 0) { //负负
-      if (-_start_speed + speed > 400) {
+      if (-_start_speed - speed > 400) {
         this->stop();
         delay(50);
       }
@@ -45,6 +45,8 @@ void L298N::run(int direction, int speed)
       }
     }
   }	
+ _start_speed = speed;
+ _start_direction = direction;
   //____________________________________________________________
   
   if (speed <= 0)
@@ -67,6 +69,7 @@ void L298N::run(int direction, int speed)
     analogWrite(_pinEnable, speed);
     break;
   }
+
 }
 
 void L298N::stop()
