@@ -10,7 +10,8 @@ class L298N
 {
 public:
    L298N(uint8_t pinEnable, uint8_t pinIN1, uint8_t pinIN2);
-
+   int _start_speed = 0;
+   int _start_direction = 0;
    void run(int direction, int speed);
    void stop();
 
