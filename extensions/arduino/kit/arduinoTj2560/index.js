@@ -1,9 +1,9 @@
 const arduinoTj2560Ext = () => ({
     name: 'TJ2560',
     extensionId: 'arduinoTj2560Ext',
-    version: '1.0.0',
+    version: '1.1.0',
     supportDevice: ['arduinoTj2560'],
-    author: 'ArthurZheng',
+    author: 'bright',
     description: 'Tj arduino 2560 board.',
     featured: true,
     hide: true,

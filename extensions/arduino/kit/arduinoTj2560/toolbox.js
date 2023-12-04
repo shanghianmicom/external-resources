@@ -64,6 +64,12 @@ function addToolbox () {
     <sep gap="36"/>
     <block type="arduinoTj2560Ext_irRecive" id="arduinoTj2560Ext_irRecive"></block>
     <block type="arduinoTj2560Ext_isIrPress" id="arduinoTj2560Ext_isIrPress"></block>
+    <block type="arduinoTj2560Ext_msDelay" id="arduinoTj2560Ext_msDelay">
+	        <value name="US_">
+            <shadow type="math_whole_number">
+                <field name="NUM">1</field>
+            </shadow>
+        </value></block>
 </category>
 `;
 }

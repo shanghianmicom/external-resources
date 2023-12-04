@@ -178,7 +178,10 @@ void irRecive() {
 
         return [`irCode == IRRCCodeList[${key}][${ch}]`, Blockly.Arduino.ORDER_ATOMIC];
     };
-
+Blockly.Arduino.arduinoTj2560Ext_msDelay = function (block) {
+        const us_ = Blockly.Arduino.valueToCode(block, 'US_', Blockly.Arduino.ORDER_ATOMIC);
+        return `delayMicroseconds(${us_});  //us max: 16383 \n`;
+    };
     return Blockly;
 }
 

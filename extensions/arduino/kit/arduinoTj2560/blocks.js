@@ -404,7 +404,22 @@ function addBlocks (Blockly) {
             });
         }
     };
-
+    Blockly.Blocks.arduinoTj2560Ext_msDelay ={
+        init: function () {
+        this.jsonInit({
+            message0: Blockly.Msg.ARDUINOTJ2560EXT_SETTIME,
+            args0: [
+                {
+                    type: 'input_value',
+                    name: 'US_'
+                }
+            ],
+            colour: colour,
+            secondaryColour: secondaryColour,
+            extensions: ['shape_statement']
+        });
+    }	
+};
     return Blockly;
 }
 
