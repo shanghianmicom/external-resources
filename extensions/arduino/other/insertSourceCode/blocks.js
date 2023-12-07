@@ -2,8 +2,8 @@
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
 function addBlocks (Blockly) {
-    const color = '#C0C0C0';
-    const secondaryColour = '#808080';
+    const color = '#4C97FF';
+    const secondaryColour = '#3373CC';
 
     Blockly.Blocks.insertSourceCode_commandBlock = {
         init: function () {
