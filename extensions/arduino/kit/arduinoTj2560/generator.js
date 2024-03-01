@@ -88,7 +88,7 @@ function addGenerator (Blockly) {
         const angle = Blockly.Arduino.valueToCode(block, 'ANGLE', Blockly.Arduino.ORDER_ATOMIC);
 
         Blockly.Arduino.includes_.arduinoTj2560Ext_onBoardDriver_io = `#include <io_tj2560.h>`;
-        Blockly.Arduino.includes_.arduinoTj2560Ext_setServo = `#include <Servo.h>`;
+        Blockly.Arduino.includes_.arduinoTj2560Ext_setServo = `#include <Tj2560Servo.h>`;
 
         Blockly.Arduino.definitions_[`setServo${port}`] = `Servo servo_${port};`;
         Blockly.Arduino.setups_[`setServo${port}`] = `servo_${port}.attach(pinMap[${port}][S6]);`;
