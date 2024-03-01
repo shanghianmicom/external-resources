@@ -6,7 +6,7 @@ const insertSourceCode = formatMessage => ({
     extensionId: 'insertSourceCode',
     version: '1.1.0',
     supportDevice: ['arduinoTj2560'],
-    author: 'bright',
+    author: 'Bright',
     iconURL: `asset/insertSourceCode.png`,
     description: formatMessage({
         id: 'insertSourceCode.description',

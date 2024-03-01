@@ -7,7 +7,15 @@ function addToolbox () {
 
     return `
 <category name="%{BKY_TJ2560COLORSENSOR_CATEGORY}" id="TJ2560COLORSENSOR_CATEGORY" colour="#fc89c7" secondaryColour="#b9568b" iconURI="${iconURI}">
-    <block type="tj2560ColorSensor_read" id="tj2560ColorSensor_read">
+    <block type="Tj2560ColorSensor_Read" id="Tj2560ColorSensor_Read">
+    </block>
+    <block type="Tj2560ColorSensor_Red" id="Tj2560ColorSensor_Red">
+    </block>
+    <block type="Tj2560ColorSensor_Green" id="Tj2560ColorSensor_Green">
+    </block>
+    <block type="Tj2560ColorSensor_Blue" id="Tj2560ColorSensor_Blue">
+    </block>
+    <block type="Tj2560ColorSensor_Clear" id="Tj2560ColorSensor_Clear">
     </block>
 </category>`;
 }
