@@ -7,14 +7,11 @@ function addGenerator (Blockly) {
         const tcs_gain = block.getFieldValue('GAIN');
         Blockly.Arduino.includes_.tjabKitColorSensor_read = `#include <Wire.h>\n#include <Adafruit_TCS34725.h>`;
         Blockly.Arduino.setups_.tjabKitColorSensor_read = `tcs.begin();`;
-        Blockly.Arduino.definitions_[`tjabKitColorSensor_Read${port}`] =
-`Adafruit_TCS34725 tcs = Adafruit_TCS34725( ${tcs_time}, ${tcs_gain});
+        Blockly.Arduino.definitions_[`tjabKitColorSensor_Read${port}`] =`Adafruit_TCS34725 tcs = Adafruit_TCS34725( ${tcs_time}, ${tcs_gain});
     uint16_t r = 0;
     uint16_t g = 0;
     uint16_t b = 0;
-    uint16_t c = 0;
-}
-`;
+    uint16_t c = 0;  `;
         return `tcs.getRawData(&r, &g, &b, &c);\n`;
     };
 

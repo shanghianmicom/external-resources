@@ -2,9 +2,10 @@
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
 function addGenerator (Blockly) {
-
+    let FiveRgbLed_port = null;
     Blockly.Arduino.tj2560FiveRgbLed_setPixelColor = function (block) {
         const port = block.getFieldValue('PORT');
+        FiveRgbLed_port = port;
         const no = Blockly.Arduino.valueToCode(block, 'NO', Blockly.Arduino.ORDER_ATOMIC);
         const colour = Blockly.Arduino.valueToCode(block, 'COLOR', Blockly.Arduino.ORDER_ATOMIC).replace('#', '0x');
 
@@ -16,13 +17,12 @@ function addGenerator (Blockly) {
 
         return `fiveLedStrip_${port}.setPixelColor(${no} - 1, ${colour});\nfiveLedStrip_${port}.show();\n`;
     };
-
     Blockly.Arduino.tj2560FiveRgbLed_color = function (block) {
         const r = Blockly.Arduino.valueToCode(block, 'R', Blockly.Arduino.ORDER_ATOMIC);
         const g = Blockly.Arduino.valueToCode(block, 'G', Blockly.Arduino.ORDER_ATOMIC);
         const b = Blockly.Arduino.valueToCode(block, 'B', Blockly.Arduino.ORDER_ATOMIC);
-
-        return [`${(r << 16) + (g << 8) + b}`, Blockly.Arduino.ORDER_ATOMIC];
+        const port = FiveRgbLed_port;
+        return [`fiveLedStrip_${port}.Color(${r}, ${g}, ${b})`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
     Blockly.Arduino.tj2560FiveRgbLed_fill = function (block) {

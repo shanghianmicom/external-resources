@@ -25,6 +25,8 @@ private:
    byte _pinIN2; 
    int _speed_left;
    int _speed_right;
+   int _start_speed = 0;
+   int _start_direction = 0;
 };
 
 #endif

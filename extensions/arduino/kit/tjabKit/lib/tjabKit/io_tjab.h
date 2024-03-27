@@ -11,10 +11,15 @@
 
 const uint8_t pinMap[2][2] =
 {
+    { 6,  8},   // LEFT
+    {7,  5}  // RIGHT
+};
+/*
+{
     { 5,  7},   // LEFT
     {8,  6}  // RIGHT
 };
-/*const uint8_t pinMap[2][2] =
+const uint8_t pinMap[2][2] =
 {
     { 5,  6},   // LEFT
     {11,  10}  // RIGHT
