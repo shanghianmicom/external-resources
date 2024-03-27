@@ -11,8 +11,6 @@ function addGenerator (Blockly) {
         Blockly.Arduino.definitions_[`tj2560RgbLed_setPixelColor_${port}`] = `Adafruit_NeoPixel ledStrip_${port}(1, pinMap[${port}][S5], NEO_GRB + NEO_KHZ800);`;
         Blockly.Arduino.setups_[`tj2560RgbLed_setPixelColor_${port}`] = `ledStrip_${port}.begin();`;
 
-        Blockly.Arduino.includes_.arduinoTj2560Ext_onBoardDriver_io = `#include <io_tj2560.h>`;
-
         return `ledStrip_${port}.setPixelColor(0, ${colour});\nledStrip_${port}.show();\n`;
     };
 
